@@ -1,0 +1,52 @@
+.hero {
+  position: relative;
+  background: var(--green-950);
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+}
+
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 46, 28, 0.4), rgba(10, 46, 28, 0.92));
+}
+
+.content {
+  position: relative;
+  color: var(--white);
+}
+
+.title {
+  color: var(--white);
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+}
+
+.crumbs {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  gap: 8px;
+}
+
+.crumbs a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.crumbs a:hover {
+  color: var(--gold-500);
+}
