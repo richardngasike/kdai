@@ -14,7 +14,7 @@ import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
-  FaYoutube,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { nav, siteInfo } from "@/lib/siteData";
 import styles from "./Header.module.css";
@@ -48,8 +48,8 @@ export default function Header() {
             <a href="#" aria-label="Instagram">
               <FaInstagram size={12} />
             </a>
-            <a href="#" aria-label="YouTube">
-              <FaYoutube size={12} />
+            <a href="#" aria-label="WhatsApp">
+              <FaWhatsapp size={12} />
             </a>
           </div>
         </div>

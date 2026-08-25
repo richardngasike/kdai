@@ -5,6 +5,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaYoutube,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { nav, siteInfo, programs } from "@/lib/siteData";
 import styles from "./Footer.module.css";
@@ -32,7 +33,7 @@ export default function Footer() {
               <a href="#" aria-label="Facebook"><FaFacebookF size={14} /></a>
               <a href="#" aria-label="Twitter"><FaTwitter size={14} /></a>
               <a href="#" aria-label="Instagram"><FaInstagram size={14} /></a>
-              <a href="#" aria-label="YouTube"><FaYoutube size={14} /></a>
+              <a href="#" aria-label="WhatsApp"><FaWhatsapp size={14} /></a>
             </div>
           </div>
 
@@ -77,7 +78,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <span>&copy; {year} Kimunyak Differently Abled Initiative (K.D.A.I). All Rights Reserved.</span>
-          <span>Designed for Inclusion</span>
+          <span>Developed by Richard Ngasike</span>
         </div>
       </div>
     </footer>

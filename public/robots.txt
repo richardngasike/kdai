@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kdai.org/sitemap.xml
+Sitemap: https://kimunyak.org/sitemap.xml

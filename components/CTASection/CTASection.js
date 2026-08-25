@@ -6,7 +6,7 @@ export default function CTASection() {
   return (
     <div className={styles.wrap}>
       <div className={styles.bg}>
-        <img src="/images/cta-group.jpg" alt="K.D.A.I community members together" />
+        <img src="/images/kdai14.jpeg" alt="K.D.A.I community members together" />
       </div>
       <div className={styles.overlay} />
       <div className={styles.content}>

@@ -61,7 +61,7 @@ export default function AboutPage() {
             </div>
 
             <div className={styles.storyImg}>
-              <img src="/images/about-story.jpg" alt="K.D.A.I community member" />
+              <img src="/images/kdai99.jpeg" alt="K.D.A.I community member" />
             </div>
           </div>
         </div>
