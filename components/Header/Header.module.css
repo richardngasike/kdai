@@ -62,13 +62,15 @@
   justify-content: space-between;
   height: var(--header-h);
   gap: 24px;
+  min-width: 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .logoMark {
@@ -83,6 +85,7 @@
   display: flex;
   flex-direction: column;
   line-height: 1.15;
+  min-width: 0;
 }
 
 .brandTitle {
@@ -90,6 +93,9 @@
   font-weight: 700;
   font-size: 1rem;
   color: var(--green-950);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .brandSub {
@@ -97,6 +103,9 @@
   letter-spacing: 0.04em;
   color: var(--ink-soft);
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav {
@@ -195,5 +204,33 @@
   }
   .topbarLeft .topbarItem:nth-child(2) {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerActions {
+    gap: 8px;
+  }
+
+  .headerActions a {
+    padding: 9px 16px;
+    font-size: 0.8rem;
+  }
+
+  .logoMark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menuToggle {
+    font-size: 1.4rem;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 360px) {
+  .headerActions a {
+    padding: 8px 12px;
+    font-size: 0.75rem;
   }
 }
