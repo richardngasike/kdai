@@ -2,6 +2,8 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { siteInfo } from "@/lib/siteData";
+import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 export const metadata = {
   metadataBase: new URL(siteInfo.domain),
@@ -64,6 +66,8 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
+        <ScrollToTop />
       </body>
     </html>
   );
