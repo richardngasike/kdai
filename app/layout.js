@@ -5,7 +5,6 @@ import { siteInfo } from "@/lib/siteData";
 import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
-
 export const metadata = {
   metadataBase: new URL(siteInfo.domain),
   title: {
@@ -20,6 +19,8 @@ export const metadata = {
     "Kimunyak Differently Abled Initiative",
     "Kimunyak K.D.A.I",
     "K.D.A.I Samburu",
+    "KDAI",
+    "KDAI",
     "differently abled initiative Kenya",
     "differently abled Samburu County",
     "disability CBO Samburu",
@@ -43,7 +44,7 @@ export const metadata = {
       "Empowering differently abled communities in Samburu County, Kenya through education, healthcare, livelihoods and advocacy.",
     url: siteInfo.domain,
     siteName: "Kimunyak Differently Abled Initiative (K.D.A.I)",
-    images: ["/images/logo.png"],
+    images: ["/images/logo.jpeg"],
     locale: "en_KE",
     type: "website",
   },
@@ -52,10 +53,15 @@ export const metadata = {
     title: "Kimunyak Differently Abled Initiative (K.D.A.I)",
     description:
       "Empowering differently abled communities in Samburu County, Kenya.",
-    images: ["/images/logo.png"],
+    images: ["/images/logo.jpeg"],
   },
   icons: {
-    icon: "/images/logo.png",
+    icon: [
+      { url: "/images/logo.jpeg", type: "image/jpeg" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/images/logo.jpeg",
+    apple: "/images/logo.jpeg",
   },
   robots: {
     index: true,
@@ -70,15 +76,17 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
+  // Add real verification codes once available (Search Console, Bing Webmaster).
+  // verification: { google: "xxxxxxxx", other: { "msvalidate.01": "xxxxxxxx" } },
 };
- 
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "NGO",
   name: "Kimunyak Differently Abled Initiative",
   alternateName: "K.D.A.I",
   url: siteInfo.domain,
-  logo: `${siteInfo.domain}/images/logo.png`,
+  logo: `${siteInfo.domain}/images/logo.jpeg`,
   description:
     "Kimunyak Differently Abled Initiative (K.D.A.I) is a community-based organization in Samburu County, Kenya, promoting the rights, inclusion, dignity and well-being of persons with disabilities.",
   address: {
@@ -96,9 +104,11 @@ const organizationSchema = {
     email: siteInfo.email,
     contactType: "customer service",
   },
+  // Add real social profile URLs here once available — sameAs is a strong
+  // trust/relevance signal for knowledge-panel and brand SEO.
   sameAs: [],
 };
- 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
