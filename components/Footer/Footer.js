@@ -29,12 +29,43 @@ export default function Footer() {
               an inclusive society where persons with disabilities in Samburu County
               live with dignity, equality and opportunity.
             </p>
-            <div className={styles.social}>
-              <a href="#" aria-label="Facebook"><FaFacebookF size={14} /></a>
-              <a href="#" aria-label="Twitter"><FaTwitter size={14} /></a>
-              <a href="#" aria-label="Instagram"><FaInstagram size={14} /></a>
-              <a href="#" aria-label="WhatsApp"><FaWhatsapp size={14} /></a>
-            </div>
+           <div className={styles.social}>
+  <a
+    href="https://www.facebook.com/profile.php?id=61575308155333"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FaFacebookF size={14} />
+  </a>
+
+  <a
+    href="https://x.com/kimunyakorg"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Twitter"
+  >
+    <FaTwitter size={14} />
+  </a>
+
+  <a
+    href="https://www.instagram.com/kimunyakorg/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram size={14} />
+  </a>
+
+  <a
+    href="https://wa.me/254790187601"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <FaWhatsapp size={14} />
+  </a>
+</div>
           </div>
 
           <div>

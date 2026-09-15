@@ -15,6 +15,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaWhatsapp,
+  FaLinkedin,
 } from "react-icons/fa";
 import { nav, siteInfo } from "@/lib/siteData";
 import styles from "./Header.module.css";
@@ -39,19 +40,42 @@ export default function Header() {
             </span>
           </div>
           <div className={styles.topbarSocial}>
-            <a href="#" aria-label="Facebook">
-              <FaFacebookF size={12} />
-            </a>
-            <a href="#" aria-label="Twitter">
-              <FaTwitter size={12} />
-            </a>
-            <a href="#" aria-label="Instagram">
-              <FaInstagram size={12} />
-            </a>
-            <a href="#" aria-label="WhatsApp">
-              <FaWhatsapp size={12} />
-            </a>
-          </div>
+  <a
+    href="https://www.facebook.com/profile.php?id=61575308155333"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FaFacebookF size={12} />
+  </a>
+
+  <a
+    href="https://x.com/kimunyakorg"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Twitter"
+  >
+    <FaTwitter size={12} />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/company/kimunyak-differently-abled-initiative-k-d-a-i/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedin size={12} />
+  </a>
+
+  <a
+    href="https://wa.me/254790187601"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <FaWhatsapp size={12} />
+  </a>
+</div>
         </div>
       </div>
 
